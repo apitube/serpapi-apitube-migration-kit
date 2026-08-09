@@ -366,7 +366,7 @@ export class SerpApiNewsShim {
 
             if (perPage > MAX_PER_PAGE) {
                 this.warn(
-                    `per_page=${perPage} capped at ${MAX_PER_PAGE}: APITube returns 400 ER0171 "Limit is out of range." above that.`
+                    `per_page=${perPage} capped at ${MAX_PER_PAGE}: APITube returns 400 ER0171 "Limit is out of range. Your plan allows up to 250 results per page." above that.`
                 );
                 perPage = MAX_PER_PAGE;
             }

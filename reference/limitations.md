@@ -58,7 +58,7 @@ Until this settles: trust `href` for attribution, treat `source.*` as advisory, 
 | `language.code=en-US` | `400 ER0061 "language.code must be between 1 and 2 characters."` |
 | `language.code=ru` or `uk` | `400 ER0237` — no Russian, no Ukrainian |
 | `language.code=iw` | `400 ER0237` — Google's legacy Hebrew code; use `he` |
-| `per_page=251` | `400 ER0171 "Limit is out of range."` |
+| `per_page=251` | `400 ER0171 "Limit is out of range. Your plan allows up to 250 results per page."` |
 | `sort.by=relevance` with a search term | `500 ER0183` |
 | `query=category.id:medtop:04000000` | `400 ER0701` — quote values containing a colon |
 | `organization.name=Apple Inc` | `400 ER0220` — strip legal suffixes |

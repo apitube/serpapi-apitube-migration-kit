@@ -390,7 +390,7 @@ class SerpApiNewsShim:
             if per_page > MAX_PER_PAGE:
                 self.warn(
                     f"per_page={per_page} capped at {MAX_PER_PAGE}: APITube returns 400 ER0171 "
-                    '"Limit is out of range." above that.'
+                    '"Limit is out of range. Your plan allows up to 250 results per page." above that.'
                 )
                 per_page = MAX_PER_PAGE
 

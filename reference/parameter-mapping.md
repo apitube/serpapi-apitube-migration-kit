@@ -80,7 +80,7 @@ SerpApi's Google News endpoint has no `num`, `start` or `page`. You send a query
 curl "https://api.apitube.io/v1/news/everything?api_key=YOUR_API_KEY&title=tesla&per_page=250&page=1"
 ```
 
-`per_page` above 250 returns `400 ER0171 "Limit is out of range."` Page numbering starts at 1, and `page=0` is silently treated as `page=1`.
+`per_page` above 250 returns `400 ER0171 "Limit is out of range. Your plan allows up to 250 results per page."` Page numbering starts at 1, and `page=0` is silently treated as `page=1`.
 
 The total count comes from a separate endpoint:
 
